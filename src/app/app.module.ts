@@ -1,18 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { LayoutModule } from '@angular/cdk/layout';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutModule } from '@app/about/about.module';
+import { AppRoutingModule } from '@app/app-routing.module';
+import { AppComponent } from '@app/app.component';
+import { CoreModule } from '@app/core/core.module';
+import { SharedModule } from '@app/shared/shared.module';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+const COMPONENTS = [AppComponent];
+const PROVIDERS = [];
+const MODULES = [
+  BrowserAnimationsModule,
+  BrowserModule,
+  LayoutModule,
+  AboutModule,
+  SharedModule,
+  CoreModule,
+  AppRoutingModule
+];
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
+  imports: [MODULES],
+  declarations: [COMPONENTS],
+  providers: [PROVIDERS],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

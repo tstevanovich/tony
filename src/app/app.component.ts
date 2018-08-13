@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'tony';
+export class AppComponent implements OnInit {
+  title = 'Tony Stevanovich';
+  logo = require('../assets/logo.png');
+
+  // navigation
+  navLinks = [
+    { link: 'about', label: 'About' },
+    { link: 'skills', label: 'Skills' },
+    { link: 'resume', label: 'Resume' },
+    { link: 'contact', label: 'Contact' }
+  ];
+
+  constructor() {}
+
+  ngOnInit() {}
 }
