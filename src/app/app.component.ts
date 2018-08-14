@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'Tony Stevanovich';
-  logo = require('../assets/logo.png');
+  logo = require('../assets/images/logo.png');
 
   // navigation
   navLinks = [

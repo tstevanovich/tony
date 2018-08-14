@@ -11,22 +11,22 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button mat-icon-button class="d-md-none col-md-2" (click)="sidenav.open()">
+      <button mat-icon-button class="d-md-none col-md-3" (click)="sidenav.open()">
         <i class="fa fa-bars"></i>
       </button>
       <!-- Handheld Logo -->
-      <span class="text-center d-md-none col-md-10">
+      <span class="text-center d-md-none col-md-9">
         <a routerLink="/">
           <img [src]="logo" />
         </a>
       </span>
       <!-- Default Logo -->
-      <span class="d-md-inline d-none col-md-2">
+      <span class="d-md-inline d-none col-md-3">
         <a routerLink="/">
           <img [src]="logo" />
         </a>
       </span>
-      <ul class="text-center d-none d-md-inline col-md-7">
+      <ul class="text-center d-none d-md-inline col-md-6">
         <li *ngFor="let nav of navLinks">
           <a [routerLink]="[nav.link]" routerLinkActive="active">
             {{nav.label}}
