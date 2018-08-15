@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+// Firebase App is always required and must be first
+const firebase = require('firebase/app');
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,5 +22,10 @@ export class AppComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    firebase.initializeApp({
+      apiKey: 'AIzaSyCBhTiYSp33XlsP51GFbite8CnkJ8kUcm4',
+      authDomain: 'tony-e6d73.firebaseapp.com'
+    });
+  }
 }

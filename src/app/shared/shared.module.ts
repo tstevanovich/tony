@@ -39,8 +39,9 @@ import {
   MatTooltipModule,
   MatTreeModule
 } from '@angular/material';
+import { OrderbyPipe } from './pipes/orderby.pipe';
 
-const COMPONENTS = [];
+const COMPONENTS = [OrderbyPipe];
 const PROVIDERS = [];
 const MODULES = [
   CommonModule,
