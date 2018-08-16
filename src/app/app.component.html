@@ -7,6 +7,14 @@
       <a mat-list-item *ngFor="let nav of navLinks" (click)="sidenav.close()" [routerLink]="[nav.link]" routerLinkActive="active">
         {{nav.label}}
       </a>
+      <span *ngFor="let social of socialLinks">
+        <a *ngIf="social.label === 'Email'" mat-list-item href="{{social.link}}" title="{{social.label}}">
+          <i class="{{social.icon}}"></i> {{social.label}}
+        </a>
+        <a *ngIf="social.label !== 'Email'" mat-list-item href="{{social.link}}" target="_blank" title="{{social.label}}">
+          <i class="{{social.icon}}"></i> {{social.label}}
+        </a>
+      </span>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -34,21 +42,14 @@
         </li>
       </ul>
       <span class="text-right d-none d-md-inline col-md-3">
-        <a href="https://www.facebook.com/stevanovich" target="_blank" title="Facebook">
-          <i class="fa fa-facebook-square"></i>
-        </a>
-        <a href="https://twitter.com/TonyStevanovich" target="_blank" title="Twitter">
-          <i class="fa fa-twitter-square"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/tony-stevanovich-7030b11/" target="_blank" title="LinkedIn">
-          <i class="fa fa-linkedin-square"></i>
-        </a>
-        <a href="https://github.com/tstevanovich" target="_blank" title="Github">
-          <i class="fa fa-github-square"></i>
-        </a>
-        <a href="mailto:tonys@yahoo.com" title="Email">
-          <i class="fa fa-envelope"></i>
-        </a>
+        <span *ngFor="let social of socialLinks">
+          <a *ngIf="social.label === 'Email'" href="{{social.link}}" title="{{social.label}}">
+            <i class="{{social.icon}}"></i>
+          </a>
+          <a *ngIf="social.label !== 'Email'" href="{{social.link}}" target="_blank" title="{{social.label}}">
+            <i class="{{social.icon}}"></i>
+          </a>
+        </span>
       </span>
     </mat-toolbar>
     <div class="content" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
