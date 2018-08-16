@@ -6,8 +6,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'skills', loadChildren: './features/skills/skills.module#SkillsModule' },
-  { path: 'resume', loadChildren: './features/resume/resume.module#ResumeModule' },
-  { path: 'contact', component: AboutComponent }
+  { path: 'resume', loadChildren: './features/resume/resume.module#ResumeModule' }
 ];
 
 @NgModule({

@@ -46,10 +46,13 @@
         <a href="https://github.com/tstevanovich" target="_blank" title="Github">
           <i class="fa fa-github-square"></i>
         </a>
+        <a href="mailto:tonys@yahoo.com" title="Email">
+          <i class="fa fa-envelope"></i>
+        </a>
       </span>
     </mat-toolbar>
-    <div class="content">
-      <router-outlet></router-outlet>
+    <div class="content" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+      <router-outlet #o="outlet"></router-outlet>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
