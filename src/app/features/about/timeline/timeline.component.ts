@@ -21,12 +21,14 @@ export class TimelineComponent implements OnInit, OnDestroy {
   }
 
   scroll() {
-    const items = document.querySelectorAll('.timeline li');
-    for (let i = 0; i < items.length; i++) {
-      if (this.isElementInViewport(items[i])) {
-        items[i].classList.add('in-view');
+    const items: NodeListOf<Element> = document.querySelectorAll(
+      '.timeline li'
+    );
+    for (const item of items as any) {
+      if (this.isElementInViewport(item)) {
+        item.classList.add('in-view');
       } else {
-        items[i].classList.remove('in-view');
+        item.classList.remove('in-view');
       }
     }
   }
@@ -36,7 +38,8 @@ export class TimelineComponent implements OnInit, OnDestroy {
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
