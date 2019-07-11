@@ -6,7 +6,11 @@ mat-sidenav-container {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/assets/images/background.jpg');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url('../assets/images/background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   mat-toolbar {
@@ -32,11 +36,11 @@ mat-sidenav-container {
         a {
           text-decoration: none;
           color: #474749;
-          font-size: .7em;
+          font-size: 0.7em;
           padding-bottom: 5px;
         }
         a.active {
-          border-bottom: 3px solid #72609E;
+          border-bottom: 3px solid #72609e;
         }
       }
     }
@@ -66,7 +70,7 @@ mat-sidenav {
   .mat-nav-list {
     padding-top: 0;
     a.active {
-      background: #72609E;
+      background: #72609e;
     }
     i {
       margin-right: 10px;
