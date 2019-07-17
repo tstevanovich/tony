@@ -10,9 +10,12 @@ export class SkillsService {
   constructor(private http: HttpClient) {}
 
   getSkills(): Observable<Skill[]> {
-    return this.http.get<Skill[]>('https://tony-e6d73.firebaseio.com/skills.json', {
-      observe: 'body',
-      responseType: 'json'
-    });
+    return this.http.get<Skill[]>(
+      'https://tony-e6d73.firebaseio.com/skills.json',
+      {
+        observe: 'body',
+        responseType: 'json'
+      }
+    );
   }
 }

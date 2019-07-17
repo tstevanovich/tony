@@ -11,8 +11,8 @@ import { SharedModule } from '@app/shared/shared.module';
 const COMPONENTS = [AppComponent];
 const PROVIDERS = [];
 const MODULES = [
-  BrowserAnimationsModule,
   BrowserModule,
+  BrowserAnimationsModule,
   LayoutModule,
   AboutModule,
   SharedModule,
