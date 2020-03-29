@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  a,
+  a:visited {
+    color: #e040fb;
+  }
+
+  .card {
+    color: #fff;
+    min-height: 225px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+}
+router-outlet ~ * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
