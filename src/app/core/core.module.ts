@@ -1,13 +1,24 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule, Optional, SkipSelf } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-const COMPONENTS = [];
-const PROVIDERS = [];
-const MODULES = [CommonModule];
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  imports: [MODULES],
-  declarations: [COMPONENTS],
-  providers: [PROVIDERS]
+  // modules
+  imports: [CommonModule, HttpClientModule, RouterModule],
+  // header, footer
+  declarations: [HeaderComponent],
+  // guards, interceptors, services
+  providers: [],
+  // header, footer
+  exports: [HeaderComponent]
 })
-export class CoreModule {}
+export class CoreModule {
+  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
+    if (parentModule) {
+      throw new Error('CoreModule is already loaded. Import only in AppModule');
+    }
+  }
+}

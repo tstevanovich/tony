@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from '@app/features/about/about.component';
+import { AboutHomeComponent } from '@app/modules/about/pages/about-home/about-home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
-  { path: 'about', component: AboutComponent },
+  { path: 'about', component: AboutHomeComponent },
   {
     path: 'skills',
-    loadChildren: './features/skills/skills.module#SkillsModule'
+    loadChildren: () =>
+      import('./modules/skills/skills.module').then((m) => m.SkillsModule)
   },
   {
     path: 'resume',
-    loadChildren: './features/resume/resume.module#ResumeModule'
+    loadChildren: () =>
+      import('./modules/resume/resume.module').then((m) => m.ResumeModule)
   }
 ];
 

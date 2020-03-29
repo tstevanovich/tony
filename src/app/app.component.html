@@ -1,61 +1,8 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav mode="push">
-    <div class="branding">
-      <img [src]="logo" />
-    </div>
-    <mat-nav-list>
-      <a mat-list-item *ngFor="let nav of navLinks" (click)="sidenav.close()" [routerLink]="[nav.link]"
-        routerLinkActive="active">
-        {{ nav.label }}
-      </a>
-      <span *ngFor="let social of socialLinks">
-        <a *ngIf="social.label === 'Email'" mat-list-item href="{{ social.link }}" title="{{ social.label }}">
-          <i class="{{ social.icon }}"></i> {{ social.label }}
-        </a>
-        <a *ngIf="social.label !== 'Email'" mat-list-item href="{{ social.link }}" target="_blank"
-          title="{{ social.label }}">
-          <i class="{{ social.icon }}"></i> {{ social.label }}
-        </a>
-      </span>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button mat-icon-button class="d-md-none col-md-3" (click)="sidenav.open()">
-        <i class="fa fa-bars"></i>
-      </button>
-      <!-- Handheld Logo -->
-      <span class="text-center d-md-none col-md-9">
-        <a routerLink="/">
-          <img [src]="logo" />
-        </a>
-      </span>
-      <!-- Default Logo -->
-      <span class="d-md-inline d-none col-md-3">
-        <a routerLink="/">
-          <img [src]="logo" />
-        </a>
-      </span>
-      <ul class="text-center d-none d-md-inline col-md-6">
-        <li *ngFor="let nav of navLinks">
-          <a [routerLink]="[nav.link]" routerLinkActive="active">
-            {{ nav.label }}
-          </a>
-        </li>
-      </ul>
-      <span class="text-right d-none d-md-inline col-md-3">
-        <span *ngFor="let social of socialLinks">
-          <a *ngIf="social.label === 'Email'" href="{{ social.link }}" title="{{ social.label }}">
-            <i class="{{ social.icon }}"></i>
-          </a>
-          <a *ngIf="social.label !== 'Email'" href="{{ social.link }}" target="_blank" title="{{ social.label }}">
-            <i class="{{ social.icon }}"></i>
-          </a>
-        </span>
-      </span>
-    </mat-toolbar>
-    <div class="content" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row my-1">
+    <div class="col-sm-12" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
       <router-outlet #o="outlet"></router-outlet>
     </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+  </div>
+</div>

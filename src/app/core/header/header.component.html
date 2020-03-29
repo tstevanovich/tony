@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md navbar-light justify-content-center" style="background-color: #e0e0e0;">
+  <a class="navbar-brand d-flex w-50 mr-auto" href="/"><img src="./assets/images/logo.png" alt="Logo" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+    <!-- Center Align Main Navigation -->
+    <ul class="navbar-nav justify-content-center w-100">
+      <li class="nav-item mr-auto" data-toggle="collapse" data-target=".navbar-collapse.show" routerLinkActive="active"
+        *ngFor="let nav of navLinks">
+        <a class="nav-link" [routerLink]="[nav.link]">{{ nav.label }}</a>
+      </li>
+    </ul>
+    <!-- Align Social Icons to the Right -->
+    <ul class="navbar-nav justify-content-end w-100">
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+        *ngFor="let social of socialLinks">
+        <a class="nav-link" href="{{ social.link }}" target="_blank" title="{{ social.label }}"><i
+            class="{{ social.icon }}" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>

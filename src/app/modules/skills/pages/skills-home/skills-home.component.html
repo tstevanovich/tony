@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-lg-4" *ngFor="let skill of skills | orderby: 'name'">
+      <div class="card">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title"><code>{{ skill.version }}</code>{{ skill.name }}</h5>
+          <p class="card-text">{{ skill.subtitle }}</p>
+          <div class="mt-auto">
+            <a class="card-link">
+              <i [ngClass]="{
+                  'fa-check-circle': skill.usedOnSite === true,
+                  'fa-window-close': skill.usedOnSite === false
+                }" class="fa" aria-hidden="true"></i>
+              On this site
+            </a>
+            <a class="card-link" href="{{ skill.github }}" *ngIf="skill.github !== 'NA'" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i> Github
+            </a>
+            <a class="card-link" href="{{ skill.docs }}" *ngIf="skill.docs !== 'NA'" target="_blank">
+              <i class="fa fa-book" aria-hidden="true"></i> Docs
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
