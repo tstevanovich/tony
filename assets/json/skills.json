@@ -1,0 +1,170 @@
+[
+  {
+    "docs": "https://angular.io/docs",
+    "github": "https://github.com/angular",
+    "name": "Angular",
+    "subtitle": "TypeScript-based open-source front-end web application platform",
+    "usedOnSite": true,
+    "version": 11.2
+  },
+  {
+    "docs": "https://firebase.google.com/docs/",
+    "github": "https://github.com/firebase",
+    "name": "Firebase",
+    "subtitle": "Mobile and web application development platform",
+    "usedOnSite": false,
+    "version": 8.28
+  },
+  {
+    "docs": "https://material.angular.io/guides",
+    "github": "https://github.com/angular/material2",
+    "name": "Angular Material",
+    "subtitle": "Material Design components for Angular",
+    "usedOnSite": false,
+    "version": "11.2"
+  },
+  {
+    "docs": "https://github.com/angular/angular-cli/wiki",
+    "github": "https://github.com/angular/angular-cli",
+    "name": "Angular CLI",
+    "subtitle": "A command line interface for Angular",
+    "usedOnSite": true,
+    "version": 11.2
+  },
+  {
+    "docs": "http://reactivex.io/documentation/observable.html",
+    "github": "https://github.com/ReactiveX/rxjs",
+    "name": "RxJS",
+    "subtitle": "Composes asynchronous and event-based programs by using observable sequences",
+    "usedOnSite": true,
+    "version": "6.6"
+  },
+  {
+    "docs": "https://www.typescriptlang.org/docs/home.html",
+    "github": "https://github.com/Microsoft/TypeScript",
+    "name": "Typescript",
+    "subtitle": "Strict syntactical superset of JavaScript, and adds optional static typing to the language",
+    "usedOnSite": true,
+    "version": 4.1
+  },
+  {
+    "docs": "http://getbootstrap.com/docs/4.1/getting-started/introduction/",
+    "github": "https://github.com/twbs/bootstrap",
+    "name": "Bootstrap",
+    "subtitle": "Framework for building responsive, mobile-first sites",
+    "usedOnSite": true,
+    "version": 4.6
+  },
+  {
+    "docs": "https://fontawesome.com/v4.7.0/",
+    "github": "https://github.com/components/font-awesome",
+    "name": "Font Awesome",
+    "subtitle": "Font and icon toolkit based on CSS and LESS",
+    "usedOnSite": true,
+    "version": 4.7
+  },
+  {
+    "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "github": "https://github.com/w3c/html",
+    "name": "HTML",
+    "subtitle": "Standard markup language for creating web pages and web applications",
+    "usedOnSite": true,
+    "version": 5.2
+  },
+  {
+    "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "github": "NA",
+    "name": "CSS",
+    "subtitle": "Style sheet language used for describing the presentation of a document written in HTML",
+    "usedOnSite": true,
+    "version": "4.0"
+  },
+  {
+    "docs": "http://sass-lang.com/documentation/",
+    "github": "https://github.com/sass/sass",
+    "name": "Sass",
+    "subtitle": "Preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)",
+    "usedOnSite": true,
+    "version": 3.5
+  },
+  {
+    "docs": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+    "github": "https://github.com/javascript",
+    "name": "JavaScript",
+    "subtitle": "High-level, interpreted programming language",
+    "usedOnSite": true,
+    "version": "ES2020"
+  },
+  {
+    "docs": "http://php.net/docs.php",
+    "github": "https://github.com/php/web-php",
+    "name": "PHP",
+    "subtitle": "Server-side scripting language designed for Web development",
+    "usedOnSite": false,
+    "version": 7.2
+  },
+  {
+    "docs": "https://git-scm.com/doc",
+    "github": "https://github.com/git/git",
+    "name": "Git",
+    "subtitle": "Version control system for tracking changes",
+    "usedOnSite": true,
+    "version": 2.3
+  },
+  {
+    "docs": "https://docs.oracle.com/en/database/",
+    "github": "https://github.com/oracle",
+    "name": "Oracle Database",
+    "subtitle": "Multi-model database management system",
+    "usedOnSite": false,
+    "version": 12.2
+  },
+  {
+    "docs": "https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation?view=sql-server-2017",
+    "github": "NA",
+    "name": "SQL Server",
+    "subtitle": "Relational database management system developed by Microsoft",
+    "usedOnSite": false,
+    "version": "Server 2014"
+  },
+  {
+    "docs": "https://www.primefaces.org/primeng/showcase",
+    "github": "https://github.com/primefaces/primeng",
+    "name": "PrimeNG",
+    "subtitle": "PrimeNG is a collection of rich UI components for Angular.",
+    "usedOnSite": false,
+    "version": "11.2.3"
+  },
+  {
+    "docs": "http://tomcat.apache.org/tomcat-9.0-doc/index.html",
+    "github": "https://github.com/apache/tomcat",
+    "name": "Tomcat",
+    "subtitle": "Open-source Java Servlet Container developed by Apache",
+    "usedOnSite": false,
+    "version": "9.0"
+  },
+  {
+    "docs": "https://nodejs.org/api/index.html",
+    "github": "https://github.com/nodejs",
+    "name": "Node.js",
+    "subtitle": "Open-source, cross-platform JavaScript run-time environment",
+    "usedOnSite": true,
+    "version": "15.9"
+  },
+  {
+    "docs": "https://dev.mysql.com/doc/",
+    "github": "https://github.com/mysql",
+    "name": "MySQL",
+    "subtitle": "Open-source relational database management system",
+    "usedOnSite": false,
+    "version": 5.6
+  },
+  {
+    "docs": "https://docs.angularjs.org/guide",
+    "github": "https://github.com/angular/angular.js",
+    "name": "AngularJS",
+    "subtitle": "JavaScript-based open-source front-end web application framework",
+    "usedOnSite": false,
+    "version": 1.7
+  }
+]
