@@ -1,21 +1,21 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Skill } from '@app/shared/models/skill.model';
-import { Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillsService {
+  jsonUrl = 'assets/json/skills.json';
+  skillsSubject: BehaviorSubject<Skill[]> = new BehaviorSubject<Skill[]>([]);
+  skillsList$ = this.skillsSubject.asObservable();
+
   constructor(private http: HttpClient) {}
 
-  getSkills(): Observable<Skill[]> {
-    return this.http.get<Skill[]>(
-      'https://tony-e6d73.firebaseio.com/skills.json',
-      {
-        observe: 'body',
-        responseType: 'json'
-      }
-    );
+  getSkills() {
+    this.http.get(this.jsonUrl).subscribe((data: Skill[]) => {
+      this.skillsSubject.next(data);
+    });
   }
 }
