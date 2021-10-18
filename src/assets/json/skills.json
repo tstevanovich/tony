@@ -5,7 +5,7 @@
     "name": "Angular",
     "subtitle": "TypeScript-based open-source front-end web application platform",
     "usedOnSite": true,
-    "version": 11.2
+    "version": 12.2
   },
   {
     "docs": "https://firebase.google.com/docs/",
@@ -21,7 +21,7 @@
     "name": "Angular Material",
     "subtitle": "Material Design components for Angular",
     "usedOnSite": false,
-    "version": "11.2"
+    "version": "12.2"
   },
   {
     "docs": "https://github.com/angular/angular-cli/wiki",
@@ -29,7 +29,7 @@
     "name": "Angular CLI",
     "subtitle": "A command line interface for Angular",
     "usedOnSite": true,
-    "version": 11.2
+    "version": 12.2
   },
   {
     "docs": "http://reactivex.io/documentation/observable.html",
@@ -45,7 +45,7 @@
     "name": "Typescript",
     "subtitle": "Strict syntactical superset of JavaScript, and adds optional static typing to the language",
     "usedOnSite": true,
-    "version": 4.1
+    "version": 4.3
   },
   {
     "docs": "http://getbootstrap.com/docs/4.1/getting-started/introduction/",
@@ -133,7 +133,7 @@
     "name": "PrimeNG",
     "subtitle": "PrimeNG is a collection of rich UI components for Angular.",
     "usedOnSite": false,
-    "version": "11.2.3"
+    "version": "12.2.1"
   },
   {
     "docs": "http://tomcat.apache.org/tomcat-9.0-doc/index.html",
